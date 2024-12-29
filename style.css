@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Temel stil */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 90%; /* Mobil cihazlar için genişlik */
+    max-width: 600px; /* Büyük ekranlarda genişlik sınırı */
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%; /* Ekran genişliğine göre ayarlanır */
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-text {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive tasarım için medya sorguları */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #progress-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    #progress-text {
+        font-size: 1.4rem;
+    }
+
+    .progress-bar {
+        height: 40px;
+    }
+}
+
+
